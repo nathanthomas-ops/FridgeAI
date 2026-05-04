@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Smart Fridge - Home</title>
+</head>
+<body>
+    <header>
+        <h1>Smart Fridge</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="upload-section">
+            <h2>Scan Your Fridge Contents</h2>
+            <p>Upload a photo of your fridge and let AI detect your ingredients</p>
+            <form id="recipe-form" class="upload-container">
+                <input type="file" id="ingredient-image" name="ingredient-image" accept="image/*" class="file-input" required style="display:none;">
+                <label for="ingredient-image" class="upload-button">Choose Image</label>
+                <button type="submit" class="analyze-button">Analyze Contents</button>
+            </form>
+            <div id="image-preview-box">
+                <img id="image-preview" src="" alt="Image Preview" style="max-width: 300px; display: none; border: 1px solid #ccc; padding: 8px; border-radius: 8px;">
+            </div>
+            <div id="feedback" style="color: red; margin-top: 0.5em;"></div>
+            <div id="ingredients-result" style="margin-top:1em;"></div>
+            <div id="recipe-result" style="margin-top:1em;"></div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+</html>
